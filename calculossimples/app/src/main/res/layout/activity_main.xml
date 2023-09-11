@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5E439BD6"
+    android:backgroundTint="#229C4F"
+    android:backgroundTintMode="screen"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="206dp"
+        android:layout_height="173dp"
+        android:text="Calculo de IMC"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.614"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.693" />
+
+    <Button
+        android:id="@+id/valor1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Altura"
+        app:layout_constraintBottom_toTopOf="@+id/valor2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.634"
+        tools:layout_editor_absoluteX="14dp" />
+
+    <Button
+        android:id="@+id/valor2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Peso"
+        tools:layout_editor_absoluteX="14dp"
+        tools:layout_editor_absoluteY="141dp" />
+
+    <Button
+        android:id="@+id/calculo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calcular"
+        tools:layout_editor_absoluteX="14dp"
+        tools:layout_editor_absoluteY="239dp" />
+
+    <TextView
+        android:id="@+id/valor1.1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Valor1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.552"
+        app:layout_constraintStart_toEndOf="@+id/valor1"
+        tools:layout_editor_absoluteY="72dp" />
+
+    <TextView
+        android:id="@+id/valor2.1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Valor2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.552"
+        app:layout_constraintStart_toEndOf="@+id/valor2"
+        tools:layout_editor_absoluteY="158dp" />
+
+    <TextView
+        android:id="@+id/resultado"
+        android:layout_width="41dp"
+        android:layout_height="39dp"
+        android:text="IMC"
+        tools:layout_editor_absoluteX="251dp"
+        tools:layout_editor_absoluteY="248dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
